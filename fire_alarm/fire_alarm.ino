@@ -1,6 +1,4 @@
 #include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-
 // Lowest and highest sensor readings
 const int sensorMin = 0;     // Sensor minimum
 const int sensorMax = 1024;   // Sensor maximum
