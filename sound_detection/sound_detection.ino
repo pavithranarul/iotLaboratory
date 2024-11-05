@@ -2,12 +2,11 @@ const int ledPin = 13; //pin 13 built-in led
 const int soundPin = A0; //sound sensor attach to A0
 int threshold = 600; //Set minimum threshold for LED lit
 void setup()
-52
 {
 pinMode(ledPin,OUTPUT);//set pin13 as OUTPUT
-Serial.begin(9600); //initialize serial
+Serial.begin(9600);
+} //initialize serial
 void loop()
-}
 {
 int value = analogRead(soundPin);//read the value of A0
 Serial.println(value);//print the value
@@ -18,6 +17,7 @@ delay(200);//delay 200ms
 }
 else
 {
-digitalWrite(ledPin,LOW);//turn off the led
-}
+digitalWrite(ledPin,LOW);
 delay(1000);
+}
+}
